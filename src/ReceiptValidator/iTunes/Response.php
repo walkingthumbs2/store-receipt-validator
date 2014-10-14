@@ -144,7 +144,7 @@ class Response
 
             if (array_key_exists('receipt', $jsonResponse)) {
                 $this->_receipt = $jsonResponse['receipt'];
-                $this->_purchases = [$jsonResponse['receipt']];
+                $this->_purchases = array($jsonResponse['receipt']);
             }
         } else {
             $this->_code = self::RESULT_DATA_MALFORMED;

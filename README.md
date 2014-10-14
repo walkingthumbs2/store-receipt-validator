@@ -5,12 +5,12 @@ store-receipt-validator
 
 [![Build Status](https://travis-ci.org/aporat/store-receipt-validator.png?branch=master)](https://travis-ci.org/aporat/store-receipt-validator) [![Dependency Status](https://www.versioneye.com/user/projects/529f708e632bac512c000002/badge.png)](https://www.versioneye.com/user/projects/521b6fd1632bac7a5900b02a) [![Coverage Status](https://coveralls.io/repos/aporat/store-receipt-validator/badge.png)](https://coveralls.io/r/aporat/store-receipt-validator) [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/aporat/store-receipt-validator/badges/quality-score.png?s=5b8ac393ba82b0d8850c6397ba32ec460cd398cf)](https://scrutinizer-ci.com/g/aporat/store-receipt-validator/)
 
-PHP library that can be used to validate base64 encoded iTunes in app purchase receipts.
+PHP library that can be used to validate base64 encoded iTunes in app purchase receipts. This is a backport to support PHP 5.3
 
 
 ## Requirements ##
 
-* PHP >= 5.4
+* PHP >= 5.3
 
 ## Getting Started ##
 
@@ -25,8 +25,11 @@ If you're not familiar with Composer, please see <http://getcomposer.org/>.
         {
             ...
             "require": {
-                "aporat/store-receipt-validator": "dev-master"
+                "walkingthumbs2/store-receipt-validator": "dev-master"
             },
+            "repositories": [
+                { "type": "vcs", "url": "https://github.com/walkingthumbs2/store-receipt-validator.git"},
+            ]
             ...
         }
 

@@ -41,13 +41,13 @@ class Response
      * receipt info
      * @var array
      */
-    protected $_receipt = [];
+    protected $_receipt = array();
 
     /**
      * purhcases info
      * @var array
      */
-    protected $_purchases = [];
+    protected $_purchases = array();
 
     /**
      * Constructor
